@@ -8,6 +8,16 @@ const Modal = observer((): JSX.Element => {
   const [text, setText] = useState<string>("");
   const [error, setError] = useState<boolean>(false);
 
+  const changeText = (text: string) => {
+    const lower = text.toLowerCase();
+    const splitted = lower.split("");
+    const first = splitted[0].toUpperCase();
+    const rest = [...splitted];
+    rest.splice(0, 1);
+    const result = [first, ...rest].join("");
+    return result;
+  };
+
   console.log("RENDER MODAL");
   const handleUpdateTodo = () => {
     if (text.length < 3) {
@@ -16,7 +26,7 @@ const Modal = observer((): JSX.Element => {
       return;
     }
     setError(false);
-    todoStore.updateTodo(text);
+    todoStore.updateTodo(changeText(text));
     todoStore.toogleShow();
   };
 
