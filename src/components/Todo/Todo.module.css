@@ -9,8 +9,14 @@
 .wrapper_todo {
     display: grid;
     grid-template-columns: minmax(300px, 768px);
+    background: #161a2b;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 32px;
 }
 
 .wrapper_button_filter {
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
 }

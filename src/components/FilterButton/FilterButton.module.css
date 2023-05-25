@@ -1,13 +1,16 @@
 .filter_button {
-    background-color: #FFFFFF;
-    color: black;
-    cursor: pointer;
-    align-items: center;
+    padding: 16px;
     border: none;
-    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
     outline: none;
-    border: 1px solid #6E7191;
-    border-radius: 8px;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
 }
 
 .filter_button:not(:last-child) {

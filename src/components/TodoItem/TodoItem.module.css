@@ -1,14 +1,25 @@
 .wrapper_todo {
     display: flex;
     justify-content: space-between;
-    background-color: white;
-    padding: 16px;
-    border-radius: 8px;
     align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
 }
 
+
+
 .completed {
-    background-color: #65f76a;
+    text-decoration: line-through;
+    opacity: 0.4;
 }
 
 .wrapper_todo:not(:last-child) {

@@ -7,7 +7,11 @@
 body {
   font-family: 'Golos Text', sans-serif;
   margin: 0 auto;
-  background-color: #f8f8ff;
+  background: linear-gradient(
+  90deg,
+  rgba(48, 16, 255, 1) 0%,
+  rgba(100, 115, 255, 1) 100%
+);
 }
 
 ul {

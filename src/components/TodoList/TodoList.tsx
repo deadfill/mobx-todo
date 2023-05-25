@@ -11,9 +11,13 @@ const TodoList = observer(({ todos }: { todos: ITodos[] }) => {
     return (
       <>
         {todoStore.language === "ru" ? (
-          <div>Вы еще не добавили не одну задачу</div>
+          <div className={styles.not_title}>
+            Вы еще не добавили не одну задачу
+          </div>
         ) : (
-          <div>You have not added any task yet</div>
+          <div className={styles.not_title}>
+            You have not added any task yet
+          </div>
         )}
       </>
     );

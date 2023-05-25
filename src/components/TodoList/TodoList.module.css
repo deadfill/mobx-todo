@@ -1,7 +1,9 @@
 .wrapper {
     display: grid;
     grid-template-columns: minmax(300px, 768px);
-    padding: 16px;
-    background-color: #cccdde;
     border-radius: 8px;
+}
+
+.not_title {
+    color: white;
 }

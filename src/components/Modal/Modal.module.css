@@ -28,7 +28,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 21;
-    background-color: white;
+    background-color: #161a2b;
     transition: 0.2s ease all;
 }
 
@@ -42,4 +42,23 @@
 
 .error {
     color: red;
+}
+
+.button_modal {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.modal_title {
+    color: white;
 }

@@ -40,7 +40,12 @@ const Modal = observer((): JSX.Element => {
         })}
       >
         <div>
-          <h3>Введите новое значение</h3>
+          {todoStore.language === "ru" ? (
+            <h3 className={styles.modal_title}>Введите новое значение</h3>
+          ) : (
+            <h3 className={styles.modal_title}>Enter new value</h3>
+          )}
+
           {error && <div className={styles.error}>Слишком короткая запись</div>}
           <div>
             <input
@@ -49,8 +54,18 @@ const Modal = observer((): JSX.Element => {
               onChange={(e) => setText(e.target.value)}
             />
           </div>
-          <button onClick={() => handleUpdateTodo()}>Сохранить</button>
-          <button onClick={() => handleCancelUpdate()}>Отмена</button>
+          <button
+            className={styles.button_modal}
+            onClick={() => handleUpdateTodo()}
+          >
+            Сохранить
+          </button>
+          <button
+            className={styles.button_modal}
+            onClick={() => handleCancelUpdate()}
+          >
+            Отмена
+          </button>
         </div>
       </div>
     </>
