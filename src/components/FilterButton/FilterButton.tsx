@@ -7,15 +7,17 @@ interface IFilterButton {
   filters: IFilters;
 }
 
-const FilterButton = observer(({ name, filters }: IFilterButton) => {
-  return (
-    <button
-      className={styles.filter_button}
-      onClick={() => todoStore.changeFilters(filters)}
-    >
-      {name}
-    </button>
-  );
-});
+const FilterButton = observer(
+  ({ name, filters }: IFilterButton): JSX.Element => {
+    return (
+      <button
+        className={styles.filter_button}
+        onClick={() => todoStore.changeFilters(filters)}
+      >
+        {name}
+      </button>
+    );
+  }
+);
 
 export default FilterButton;

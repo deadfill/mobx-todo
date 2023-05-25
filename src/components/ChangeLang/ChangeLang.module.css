@@ -1,3 +1,8 @@
+.wrapper_language {
+    display: flex;
+    justify-content: end;
+}
+
 .select {
     background-color: #161a2b;
     color: white;

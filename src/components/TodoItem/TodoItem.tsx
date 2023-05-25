@@ -5,7 +5,7 @@ import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import clsx from "clsx";
 
-const TodoItem = observer(({ todo }: { todo: ITodos }) => {
+const TodoItem = observer(({ todo }: { todo: ITodos }): JSX.Element => {
   const handleCompleted = (id: ITodos["id"]) => {
     todoStore.toggleTodo(id);
   };

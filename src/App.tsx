@@ -4,7 +4,7 @@ import ChangeLang from "./components/ChangeLang/ChangeLang";
 import Todo from "./components/Todo/Todo";
 import { todoStore } from "./store/todo";
 
-const App = observer(() => {
+const App = observer((): JSX.Element => {
   todoStore.language;
   return (
     <>

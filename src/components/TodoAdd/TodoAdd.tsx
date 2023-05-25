@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { todoStore } from "../../store/todo";
 import styles from "./TodoAdd.module.css";
+import { observer } from "mobx-react-lite";
 
-const TodoAdd = () => {
+const TodoAdd = observer((): JSX.Element => {
   const [value, setValue] = useState<string>("");
 
   const changeText = (text: string) => {
@@ -45,6 +46,6 @@ const TodoAdd = () => {
       )}
     </form>
   );
-};
+});
 
 export default TodoAdd;

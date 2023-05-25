@@ -6,7 +6,7 @@ import { observer } from "mobx-react-lite";
 import Modal from "../Modal/Modal";
 import FilterButton from "../FilterButton/FilterButton";
 
-const Todo = observer(() => {
+const Todo = observer((): JSX.Element => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.wrapper_todo}>

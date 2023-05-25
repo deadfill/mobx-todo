@@ -4,7 +4,7 @@ import TodoItem from "../TodoItem/TodoItem";
 import styles from "./TodoList.module.css";
 import { todoStore } from "../../store/todo";
 
-const TodoList = observer(({ todos }: { todos: ITodos[] }) => {
+const TodoList = observer(({ todos }: { todos: ITodos[] }): JSX.Element => {
   console.log("RENDER LIST");
 
   if (todos.length <= 0) {
