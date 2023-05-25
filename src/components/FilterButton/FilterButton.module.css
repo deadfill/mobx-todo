@@ -1,0 +1,15 @@
+.filter_button {
+    background-color: #FFFFFF;
+    color: black;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #6E7191;
+    border-radius: 8px;
+}
+
+.filter_button:not(:last-child) {
+    margin-right: 8px;
+}
